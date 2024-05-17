@@ -11,3 +11,4 @@ To use 13f scraper with a 13F file that you want to scrape data from:
 Notes:
 - the main.exe is the distributable version, so there aren't any dependencies that should be needed to run it.
 - this version relies on free-to-use (which is advertised on their youtube tags at: https://www.youtube.com/watch?v=4AFepZ8L7xw&t=128s) code from the3dubs, found at https://github.com/the3dubs/13F-PDF-Converter
+- the current 13F PDF is an example PDF - replace it with any 13F PDF you wish
