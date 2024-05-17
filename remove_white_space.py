@@ -1,22 +1,23 @@
 from openpyxl import Workbook, load_workbook
 import pandas as pd
 
-wb = load_workbook('test.xlsx')
-ws = wb.active
+def main():
+    wb = load_workbook('test.xlsx')
+    ws = wb.active
 
-df = pd.read_excel('test.xlsx')
-num_rows = df.shape[0]
+    df = pd.read_excel('test.xlsx')
+    num_rows = df.shape[0]
+    
+    work_sheet = ws
+    row_count = num_rows
+    rem_white_space(work_sheet, row_count)
 
-for row in range(2, num_rows+1):
-    cusip = ws['A' + str(row)].value
-    ws['A' + str(row)].value = cusip.replace(" ", "")
+    wb.save('test (no whitespace).xlsx')
 
-wb.save('test_modified.xlsx')
+def rem_white_space(xl_file, row_num):
+    # removes whitespace from CUSIP column
+    for row in range(2, row_num+1):
+        cusip = xl_file['A' + str(row)].value
+        xl_file['A' + str(row)].value = cusip.replace(" ", "")
 
-# software ideas
-# - don't require empty .xlsx file; create programmatically
-# - create app distributible .exe
-# - github for project
-# - tech used: pandas, openpyxl
-# - libraries downloaded (not necessarily in-use): pandas, openpyxl, tika
-# - 13F_PDF_Convertor.py is from: https://www.youtube.com/watch?v=4AFepZ8L7xw
+main()
