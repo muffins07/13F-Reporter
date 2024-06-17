@@ -1,4 +1,4 @@
-# 13f-scraper
+# 13F-Reporter
 This iteration creates an empty excel file and populates it with information from a 13F Securities PDF. It then formats the CUSIP column to contain no whitespace.
 
 To use 13f scraper with a 13F file that you want to scrape data from:
