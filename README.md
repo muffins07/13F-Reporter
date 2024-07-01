@@ -3,7 +3,7 @@ Generates a list of SEC securities (owned by FCM) to report on a quarterly 13F R
 
 To use software with an SEC 13F PDF from the most recent quarter:
 - place the 13F PDF into a folder containing all scripts, including merge.py
-- open a python terminal in that folder directory, and run "python merge.py"
+- open & activate a virtual environment in that folder directory, and run "python merge.py"
 - when prompted to open a file, select the 13F PDF from your directory and
 - when prompted to save a file, type "fcm", and save.
 
