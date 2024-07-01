@@ -1,12 +1,12 @@
 # 13F-Reporter
-Creates an empty excel workbook and appends two dataframes as separate sheets: one from a list of SEC 13F Securities, and another from an in-house data table containing FCM Positions information. Once the workbook is created, the program then joins the two dataframes based on matching CUSIPs.
+Generates a list of SEC securities (owned by FCM) to report on a quarterly 13F Report.
 
-To use 13F Reporter with an SEC 13F PDF that you want to scrape data from:
-- place the 13F PDF file into the root directory (containing main.py)
-- double click main.exe to launch
+To use software with an SEC 13F PDF from the most recent quarter:
+- place the 13F PDF into the root directory (containing merge.py)
+- open a python terminal, and run "python merge.py"
 - when prompted to open a file, select the 13F PDF from your directory
-- when prompted to save a file, choose any name to give the Excel workbook, and save
+- when prompted to save a file, type "fcm", and save
 
 Notes:
-- this version relies on free-to-use (which is advertised on their youtube tags at: https://www.youtube.com/watch?v=4AFepZ8L7xw&t=128s) code from the3dubs, found at https://github.com/the3dubs/13F-PDF-Converter
+- this version relies on free-to-use code from the3dubs, found at https://github.com/the3dubs/13F-PDF-Converter; they specified that this code is free to use on their video tags.
 - the current 13F PDF is an example PDF - replace it with any 13F PDF you wish
