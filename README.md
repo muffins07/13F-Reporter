@@ -3,8 +3,8 @@ Generates a list of securities (owned by FCM) in a file called "Information Tabl
 
 To use software with an SEC 13F PDF from the most recent quarter:
 - download the scripts from this project into one folder
-- place the 13F PDF into the folder containing all scripts, including merge.py
-- open & activate a virtual environment in that folder directory, and
+- place the 13F PDF into this folder
+- open & activate a virtual environment in that folder's directory, and
 - download all required dependencies. Then, run "python merge.py."
 - When prompted to open a file, select the 13F PDF from your directory and
 - when prompted to save a file, type "fcm", and save.
