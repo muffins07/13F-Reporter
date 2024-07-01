@@ -1,5 +1,5 @@
 # 13F-Reporter
-Generates a list of SEC securities (owned by FCM) in a file called "Information Table" to make a quarterly 13F Report.
+Generates a list of securities (owned by FCM) in a file called "Information Table" to make a quarterly 13F report to the SEC.
 
 To use software with an SEC 13F PDF from the most recent quarter:
 - download the scripts from this project into one folder
